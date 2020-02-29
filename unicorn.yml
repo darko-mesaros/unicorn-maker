@@ -1,0 +1,39 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: Let's make unicorns
+Parameters:
+  Name:
+    Type: String
+    Description: Unicorn name
+  Superpower:
+    Type: String
+    Description: What is the unicorns Superpower?
+  Family:
+    Type: String
+    Description: What family does the Unicorn belong to?
+Resources:
+  myLittleUnicorn: 
+    Type: Darko::Unicorn::Factory
+    Properties:
+      Name:
+        Ref: Name
+      Superpower:
+        Ref: Superpower
+      Family:
+        Ref: Family
+Outputs:
+  ID:
+    Description: The ID of the Unicorn
+    Value: 
+      Ref: myLittleUnicorn
+  Name:
+    Description: The Name of the Unicorn
+    Value: 
+      Ref: Name
+  Superpower:
+    Description: The Unicorns superpower
+    Value: 
+      Ref: Superpower
+  Family:
+    Description: The Unicorns family
+    Value: 
+      Ref: Family

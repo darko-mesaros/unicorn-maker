@@ -1,0 +1,12 @@
+{
+    "typeName": "Darko::Unicorn::Factory",
+    "language": "go",
+    "runtime": "go1.x",
+    "entrypoint": "handler",
+    "testEntrypoint": "handler",
+    "settings": {
+        "importpath": "github.com/darko-mesaros/unicorn-maker",
+        "protocolVersion": "1.0",
+        "pluginVersion": "0.1.4"
+    }
+}
