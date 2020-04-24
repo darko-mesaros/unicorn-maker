@@ -6,7 +6,6 @@
     "testEntrypoint": "handler",
     "settings": {
         "importpath": "github.com/darko-mesaros/unicorn-maker",
-        "protocolVersion": "1.0",
         "pluginVersion": "0.1.4"
     }
 }
